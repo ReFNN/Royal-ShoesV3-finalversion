@@ -1,0 +1,284 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
+/* ESTILIZAÇÃO DA PAGINA TODA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*HEADER*/
+.container {
+    padding: 40px 20px;
+    background-color: #330031;
+}
+
+.container img {
+    display: block;
+    margin: 0px auto;
+}
+
+/* MENU PRINCIPAL */
+.conteiner-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #FFB000;
+    border-bottom: 5px solid #61005e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa {
+    width: 20%;
+}
+
+.pesquisa input {
+    border: none;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000007a;
+    background-color: #61005e;
+}
+
+.pesquisa input::placeholder {
+    color: #FFB000;
+    opacity: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pesquisa input:active {
+    border: none;
+}
+
+.menu-principal {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu-principal ul {
+    display: flex;
+    align-items: center;
+    margin-left: 85px;
+    text-align: center;
+}
+
+.menu-principal ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.bttInactive {
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    color: #61005e;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+}
+
+.bttActive {
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    color: #FFB000;
+    background-color: #61005e;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+}
+
+.menu-principal ul li a:hover {
+    background-color: #61005e;
+    color: #FFB000;
+}
+
+
+/* FORMULARIO */
+
+.left-side h1 {
+    position: relative;
+    bottom: 20px;
+    border-bottom: 3px solid #360053;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.conteiner-form {
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
+    border-radius: 35px;
+    background-color: #da9500;
+    box-shadow: -5px 5px #80007b;
+    width: 800px;
+}
+
+/* LADO ESQUERDO FORM */
+.left-side {
+    width: 50%;
+    padding: 30px;
+}
+
+.left-side {
+    color: #61005e;
+    font-family: Bebas Neue;
+}
+
+.card {
+    background-color: #210033;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -5px 5px #80007b;
+    height: 400px;
+}
+
+.card img {
+    transform: rotate(10deg);
+    width: 380px;
+    height: 420px;
+    filter: drop-shadow(0rem 0rem 0.5rem #ff00ff);
+}
+
+.info-produto {
+    background-color: rgb(255, 183, 0);
+    color: black;
+    font-family: Bebas Neue;
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    bottom: 76px;
+}
+
+.detalhes-produto {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* LADO DIREITO FORM */
+.right-side {
+    width: 50%;
+    padding: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: #FFB000;
+}
+
+.img-compra-aprovada {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img-compra-aprovada img {
+    width: 300px;
+    animation: zoom 1s infinite alternate;
+}
+
+.right-side,
+.right-side h2,
+.right-side p,
+.right-side label {
+    color: #61005e;
+    font-family: Bebas Neue;
+}
+
+@keyframes zoom {
+    from {
+        scale: 1.0;
+    }
+
+    to {
+        scale: 1.1;
+    }
+}
+
+/* FOOTER */
+
+.conteiner-footer {
+    background-color: #210033;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sobre-nos {
+    width: 11cm;
+    height: 100%;
+    margin-right: 60px;
+}
+
+.sobre-nos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 1px;
+}
+
+.sobre-nos p {
+    font-family: 'Quicksand', sans-serif;
+    color: #ff00ff;
+}
+
+.alunos {
+    width: 11cm;
+    height: 100%;
+}
+
+.alunos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 1px;
+}
+
+.alunos ul li {
+    list-style: none;
+}
+
+.alunos ul li a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.conteiner-footer2 {
+    background-color: #d19600;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.conteiner-footer2 p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}

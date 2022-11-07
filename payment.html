@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta nome="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0">
+    <title>Pagamento</title>
+    <!-- LINK FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- LINK CSS -->
+    <link href="./assets/css/pay.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./mainpage.html"><img src="./assets/img/logo-final.svg" alt="logo royal shoes" width="300px"></a>
+        </div>
+        <div class="conteiner-menu">
+            <div class="menu-principal">
+                <ul>
+                    <li><a class="bttInactive" href="./mainpage.html">HOME</a></li>
+                    <li><a class="bttInactive" onclick="naoFunciona()" href="#">CASUAL</a></li>
+                    <li><a class="bttInactive" onclick="naoFunciona()" href="#">ESPORTE</a></li>
+                    <li><a class="bttInactive" onclick="naoFunciona()" href="#">SNEAKERS</a></li>
+                    <li><a class="bttInactive" onclick="naoFunciona()" href="#">CONTATO</a></li>
+                    <li><a class="bttInactive" onclick="naoFunciona()" href="#">SOBRE NÓS</a></li>
+                </ul>
+            </div>
+            <div class="pesquisa">
+                <form action="#" method="get">
+                    <input type="text" name="idbusca" placeholder="Pesquisar..." list="dtlist">
+                    <datalist id="dtlist"></datalist>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteiner-form">
+            <div class="left-side">
+                <h1>FINALIZE SUA COMPRA...</h1>
+                <div class="card">
+                    <img id="img" src="./assets/img/tenis-imgs/sapato_balenciaga-removebg-preview.png">
+                    <div class="info-produto">
+                        <p id="p1">Balenciaga Speed Treiner </p>
+                        <p id="p2">R$29.999,90</p>
+                    </div>
+                </div>
+                <div class="detalhes-produto">
+                    <div class="cor-div">
+                        <h2>Cor</h2>
+                        <input type="radio" id="modunico" name="cores" checked disabled>
+                        <label class="mod-unico" for="modunico">Modelo Único</label>
+                    </div>
+                    <div class="tamanho-div">
+                        <h2>tamanho</h2>
+                        <select required>
+                            <option>Escolha o tamanho</option>
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <form action="./approved.html">
+                    <div class="info-pessoais">
+                        <h2>INFORMAÇÕES PESSOAIS</h2>
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="nome">NOME:</label>
+                                <input type="text" id="nome" name="nome" placeholder=" Primeiro nome" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="sobrenome">SOBRENOME:</label>
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder=" Último nome" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="cpf">CPF:</label>
+                                <input id="cpf" name="cpf" type="number" placeholder=" xxx.xxx.xxx-xx" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="datanasc">DATA DE NASCIMENTO:</label>
+                                <input id="datanasc" type="date" name="datanasc" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="email">E-MAIL</label>
+                                <input id="email" type="email" name="email" placeholder=" seuemail@email.com" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="celular">CONTATO</label>
+                                <input id="celular" type="tell" name="celular" placeholder=" (xx)x xxxx-xxxx" required>
+                            </div>
+                            <div class="input-box3">
+                                <label for="endereço">ENDEREÇO</label>
+                                <input id="endereço" type="text" name="endereço" placeholder=" Digite seu endereço"
+                                    required>
+                            </div>
+                            <div class="input-box4">
+                                <label for="cep">CEP</label>
+                                <input id="cep" type="number" name="cep" placeholder=" xxxxx-xxx" required>
+                            </div>
+                            <div class="input-box4">
+                                <label for="rua">BAIRRO</label>
+                                <input id="rua" type="text" name="rua" placeholder=" Digite seu bairro" required>
+                            </div>
+                            <div class="input-box5">
+                                <label for="numero">NÚMERO</label>
+                                <input id="numero" type="number" name="numero" placeholder=" xx" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteiner-pagamento">
+                        <h2>FORMA DE PAGAMENTO</h2>
+                        <div class="input-group-pag">
+                            <div class="forma-pagamento">
+                                <div class="input-box-pag">
+                                    <input id="cartão" type="radio" name="pagamento" checked>
+                                    <label for="cartão">Cartão de Crédito</label>
+                                </div>
+                                <div class="input-box-pag5">
+                                    <input id="pix" type="radio" name="pagamento" disabled>
+                                    <label for="pix">Pix</label><br>
+                                </div>
+                                <div class="input-box-pag5">
+                                    <input id="boleto" type="radio" name="pagamento" disabled>
+                                    <label for="boleto">Boleto Bancário</label>
+                                </div>
+                            </div>
+                            <div class="forma-pagamento3">
+                                <div class="input-box-pag7">
+                                    <label for="nometitular">NOME DO TITULAR</label>
+                                    <input id="nometitular" type="text" name="nometitular" required>
+                                </div>
+                                <div class="input-box-pag7">
+                                    <label for="cpftitular">CPF DO TITULAR</label>
+                                    <input id="cpftitular" type="number" name="cpftitular" required>
+                                </div>
+                            </div>
+                            <div class="forma-pagamento2">
+                                <div class="input-box-pag2">
+                                    <label for="ncartao">NÚMERO DO CARTÃO</label>
+                                    <input id="ncartao" type="number" name="ncartao" required>
+                                </div>
+                                <div class="input-box-pag3">
+                                    <label for="cseg">CVV</label>
+                                    <input id="cseg" type="number" name="cseg" required>
+                                </div>
+                            </div>
+                            <div class="forma-pagamento">
+                                <div class="input-box-pag">
+                                    <input id="c-visa" type="radio" name="c-b">
+                                    <label for="c-visa">Visa</label>
+                                </div>
+                                <div class="input-box-pag">
+                                    <input id="c-master" type="radio" name="c-b">
+                                    <label for="c-master">MasterCard</label>
+                                </div>
+                                <div class="input-box-pag">
+                                    <input id="c-elo" type="radio" name="c-b">
+                                    <label for="c-elo">Elo</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botoes-group">
+                        <button class="bttFinalizar">FINALIZAR COMPRA</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="conteiner-footer">
+            <div class="sobre-nos">
+                <h2>SOBRE NÓS</h2>
+                <p>
+                    Este site é uma loja fictícia, realizado por estudantes da <b>Faculdade Wyden - Polo Batista
+                        Campos</b>. Nenhum dos dados aqui inseridos serão utilizados para outros fins se não os
+                    didáticos.
+                </p>
+            </div>
+            <div class="alunos">
+                <h2>CONTATO</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rodrigoo-nscmt/" target="_blank">
+                            Rodrigo Erick Freitas do Nascimento</a></li>
+                    <li><a href="#" target="_blank">
+                            Bruno Cezar Neves Dias Maia</a></li>
+                    <li><a href="#" target="_blank">
+                            Kael Vitor Souza de Assunção</a></li>
+                    <li><a href="#" target="_blank">
+                            Raphael Nicolas Carneiro Souza</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteiner-footer2">
+            <p>© 2022 Copyright: Royal Shoes</p>
+        </div>
+    </footer>
+    <!-- REFERÊNCIA JS -->
+    <script src="./assets/js/datalist.js"></script>
+    <script src="./assets/js/pay.js"></script>
+</body>
+
+</html>

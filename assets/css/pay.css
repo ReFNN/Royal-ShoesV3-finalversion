@@ -1,0 +1,451 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
+/* ESTILIZAÇÃO DA PAGINA TODA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*HEADER*/
+.container {
+    padding: 40px 20px;
+    background-color: #330031;
+}
+
+.container img {
+    display: block;
+    margin: 0px auto;
+}
+
+/* MENU PRINCIPAL */
+.conteiner-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #FFB000;
+    border-bottom: 5px solid #61005e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa {
+    width: 20%;
+}
+
+.pesquisa input {
+    border: none;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000007a;
+    background-color: #61005e;
+}
+
+.pesquisa input::placeholder {
+    color: #FFB000;
+    opacity: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pesquisa input:active {
+    border: none;
+}
+
+.menu-principal {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu-principal ul {
+    display: flex;
+    align-items: center;
+    margin-left: 85px;
+    text-align: center;
+}
+
+.menu-principal ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.bttInactive {
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    color: #61005e;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+}
+
+.bttActive {
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    color: #FFB000;
+    background-color: #61005e;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+}
+
+.menu-principal ul li a:hover {
+    background-color: #61005e;
+    color: #FFB000;
+}
+
+
+/* FORMULARIO */
+
+.left-side h1 {
+    position: relative;
+    bottom: 20px;
+    border-bottom: 3px solid #360053;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.conteiner-form {
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
+    border-radius: 35px;
+    background-color: #da9500;
+    box-shadow: -5px 5px #80007b;
+    width: 800px;
+}
+
+/* LADO ESQUERDO FORM */
+.left-side {
+    width: 50%;
+    padding: 30px;
+}
+
+.left-side {
+    color: #61005e;
+    font-family: Bebas Neue;
+}
+
+.card {
+    background-color: #210033;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -5px 5px #80007b;
+    height: 400px;
+}
+
+.card img {
+    transform: rotate(10deg);
+    width: 380px;
+    height: 420px;
+    filter: drop-shadow(0rem 0rem 0.5rem #ff00ff);
+}
+
+.info-produto {
+    background-color: rgb(255, 183, 0);
+    color: black;
+    font-family: Bebas Neue;
+    text-align: center;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    bottom: 76px;
+}
+
+.detalhes-produto {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* LADO DIREITO FORM */
+.right-side {
+    width: 50%;
+    padding: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: #FFB000;
+}
+
+.right-side,
+.right-side h2,
+.right-side p,
+.right-side label {
+    color: #61005e;
+    font-family: Bebas Neue;
+}
+
+/* LADO DIREITO - INFORMAÇÕES PESSOAIS */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-box,
+.input-box2,
+.input-box3,
+.input-box4,
+.input-box5 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.input-box input,
+.input-box2 input,
+.input-box3 input,
+.input-box4 input,
+.input-box5 input,
+.input-box-pag2 input,
+.input-box-pag3 input,
+.input-box-pag7 input,
+select {
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px #0000007a;
+    background-color: #210033;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+.input-box input::placeholder,
+.input-box2 input::placeholder,
+.input-box3 input::placeholder,
+.input-box4 input::placeholder,
+.input-box5 input::placeholder,
+.input-box-pag2 input::placeholder,
+.input-box-pag3 input::placeholder,
+.input-box-pag7 input::placeholder,
+select::placeholder {
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.input-box input:hover,
+.input-box2 input:hover,
+.input-box3 input:hover,
+.input-box4 input:hover,
+.input-box5 input:hover,
+select:hover {
+    background-color: #430068;
+    cursor: default;
+}
+
+.input-box input {
+    width: 160px;
+}
+
+.input-box2 input {
+    width: 100px;
+}
+
+.input-box3 input {
+    width: 340px;
+}
+
+.input-box4 input {
+    width: 130px;
+}
+
+.input-box5 input {
+    width: 40px;
+}
+
+/* LADO DIREITO - FORMA DE PAGAMENTO */
+.input-group-pag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.forma-pagamento {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.forma-pagamento2 {
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.forma-pagamento3 {
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-box-pag {
+    padding: 0 10px;
+}
+
+.input-box-pag2,
+.input-box-pag3,
+.input-box-pag7 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.input-box-pag2 input {
+    width: 260px;
+}
+
+.input-box-pag7 input {
+    width: 160px;
+}
+
+.input-box-pag3 {
+    margin-left: 10px;
+}
+
+.input-box-pag5 {
+    padding: 0 10px;
+}
+
+.input-box-pag5 label {
+    color: #21003385;
+}
+
+#cseg {
+    width: 60px;
+}
+
+.conteiner-pagamento:hover,
+.info-pessoais:hover {
+    cursor: default;
+}
+
+/* LADO DIREITO - BOTÃO FINALIZAR */
+.bttFinalizar {
+    background-color: #210033;
+    color: goldenrod;
+    border-radius: 8px;
+    font-family: Bebas Neue;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    align-items: center
+}
+
+.bttFinalizar:hover {
+    background-color: #5c0059;
+    color: rgb(255, 226, 130);
+    scale: 1.1;
+}
+
+.botoes-group {
+    display: flex;
+    justify-content: center
+}
+
+/* REMOVER SETINHAS DO INPUT NUMBER*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*REMOVER PLACEHOLDER INPUT DATE*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* FOOTER */
+
+.conteiner-footer {
+    background-color: #210033;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sobre-nos {
+    width: 11cm;
+    height: 100%;
+    margin-right: 60px;
+}
+
+.sobre-nos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 1px;
+}
+
+.sobre-nos p {
+    font-family: 'Quicksand', sans-serif;
+    color: #ff00ff;
+}
+
+.alunos {
+    width: 11cm;
+    height: 100%;
+}
+
+.alunos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 1px;
+}
+
+.alunos ul li {
+    list-style: none;
+}
+
+.alunos ul li a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #ff00ff;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.conteiner-footer2 {
+    background-color: #d19600;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.conteiner-footer2 p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}

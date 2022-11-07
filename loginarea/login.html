@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta nome="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0">
+    <title>Login - Royal Shoes</title>
+    <!-- LINK FONTES -->
+
+    <!-- LINK CSS -->
+    <link href="../assets/css/loginarea-css/login.css" rel="stylesheet" type="text/css" />
+    <!-- LINK ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="lado-esquerdo">
+            <h2>LOGIN</h2>
+            <p>ENTRE COM A SUA CONTA</p>
+        </div>
+        <div class="conteiner-principal">
+            <div class="borda">
+                <div class="principal">
+                    <div class="logo-top">
+                        <img src="../assets/img/logo-final.svg" width="150px">
+                    </div>
+                    <div class="form">
+                        <form action="../assets/php/login.php" method="POST">
+                            <div class="header-form">
+                                <img src="../assets/img/icones/login-icon.svg">
+                                <p>BEM-VINDO DE VOLTA!</p>
+                                <h1>Entre com a sua conta</h1>
+                            </div>
+                            <div class="inputs-form">
+                                <div class="input-box">
+                                    <label id="id-email" for="input-email">E-Mail ou Nome de Usuário</label>
+                                    <input type="text" id="input-email" name="usuario"
+                                        placeholder="Digite seu e-mail ou nome de usuário">
+                                </div>
+                                <div class="input-box">
+                                    <label id="id-senha" for="input-senha">Senha</label>
+                                    <a href="#">Esqueceu a senha?</a>
+                                    <input type="password" id="input-senha" name="senha"
+                                        placeholder="Digite sua senha">
+                                    <i id="teste" class="uil uil-eye-slash icone-unhide"></i>
+                                    <i class="uil uil-eye icone-hide"></i>
+                                </div>
+                                <div class="input-box2">
+                                    <input id="cb-lembre" type="checkbox">
+                                    <p>Lembre de mim</p>
+                                </div>
+                            </div>
+                            <button type="submit">Entrar agora</button>
+                            <div class="conteiner-cadastro">
+                                <div class="nao-registrado">
+                                    <p>Ainda não se registrou?</p>
+                                </div>
+                                <div class="cadastre-se">
+                                    <a href="./register.html">Cadastre-se
+                                        <img src="../assets/img/icones/seta-icon.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="redes-sociais">
+                            <div class="left-redes">
+                                <p>Ou entre com</p>
+                            </div>
+                            <div class="right-redes">
+                                <a href="#"><img src="../assets/img/icones/facebook-icon.svg"></a>
+                                <a href="#"><img src="../assets/img/icones/google-icon.svg"></a>
+                                <a href="#"><img src="../assets/img/icones/twitter-icon.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="../mainpage.html"><img src="../assets/img/icones/setaesquerda-icon.svg">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lado-direito">
+            <p>ENTRE COM A SUA CONTA</p>
+            <h2>LOGIN</h2>
+        </div>
+    </main>
+    <script src="../assets/js/login.js"></script>
+</body>
+
+</html>
